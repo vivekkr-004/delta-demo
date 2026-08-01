@@ -7,8 +7,6 @@
      // body
      } 
 
-// print hello world three times using function.
-
 public class syntax {
     public static void printhelloworld() {
         System.out.println("hello world");
