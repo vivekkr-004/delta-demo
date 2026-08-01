@@ -17,3 +17,12 @@ public class syntax {
         printhelloworld(); // fun ko call keya
     }
 }
+
+# 1. functions : 
+ block of code / reusable part of code.
+
+# 2. fun syntax :
+    fun syntax : 
+     public static returnType funName() {
+     // body
+     } 
