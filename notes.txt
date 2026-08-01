@@ -1,0 +1,335 @@
+- 1. boilerplatecode java :
+public class boilerplatecode {
+    public static void main (String agrs[] ) {
+        
+    }
+}
+
+- 2. Output in java and nextline : 
+public class outputinjava {
+    public static void main(String args[]) {
+        // System.out.print("Hello vivek");
+
+        // nextline
+        System.out.println("hello guys");
+        System.out.println("hello guys");
+
+        System.out.println("hello ,\nmy \nname is \nvivek");
+    }
+}
+
+- 3. Qs : Print a pattern : 
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("****\n***\n**\n*");
+    }
+}
+
+- 4. variables in java :
+public class variablesinjava {
+    public static void main(String args[]) {
+
+        % // declartion and initialization :
+        int score; (declartion ->  tell java name and data type.)
+        score = 100 ; (initilization -> assign the first value. )
+
+        // printing variables :
+        int a = 4;
+        int b  = 6;
+        String name = "vivek";
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(name);
+
+        // update 
+        a = 9;
+        System.out.println(a);
+        // assign
+        a = b; // value of b is assign to a. 
+        System.out.println(a);
+
+    }
+}
+
+- 5. datatypes in java :
+
+public class datatypes {
+   public static void main(String[] args) {
+    byte b = 8;
+    System.out.println(b);
+    char ch = 'a';
+    System.out.println(ch);
+    boolean var = false;
+    System.out.println(var);
+    float price = 10.5f;
+    System.out.println(price);
+    int number = 44;
+    System.out.println(number);
+    long data = 44444444444L;
+    System.out.println(data);
+    double declong = 448.3393938;
+    System.out.println(declong);
+    short n = 222;
+    System.out.println(n);
+
+   } 
+}
+
+- 6. Qs : sum of a and b :
+public class sumofaandb {
+    public static void main(String ags[] ) {
+        int a = 4;
+        int b = 6;
+        int sum = a + b;
+        System.out.println(sum);
+    }
+}
+
+- 7. comments in java :
+public class comments {
+    public static void main(String ags[]) {
+        // Single line comments
+
+        /* Multiline comments  */
+
+    }
+}
+
+- 8. Input all datatypes in java : 
+import java.util.*;
+
+public class inputInJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // String input = sc.next();
+        // System.out.println(input);
+        String input1 = sc.nextLine();
+
+        System.out.println(input1);
+
+        // int num = sc.nextInt();
+        // float price = sc.nextFloat();
+        // double value = sc.nextDouble();
+        // long verylong = sc.nextLong();
+
+        // boolean bol = sc.nextBoolean();
+        // short s = sc.nextShort();
+        // byte b = sc.nextByte();
+        char ch = sc.next().charAt(0);
+
+        // System.out.println(num);
+        // System.out.println(price);
+        // System.out.println(value);
+        // System.out.println(verylong);
+        // System.out.println(bol);
+        // System.out.println(s);
+        // System.out.println(b);
+        System.out.println(ch);
+       
+        
+    }
+}
+
+- 9. Qs sum of a and b user input 
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a +  b;
+        System.out.println(a + b);
+        
+    }
+}
+
+- 10. Qs product of a and b user input 
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj =  new Scanner(System.in);
+        int a = obj.nextInt();
+        int b = obj.nextInt();
+        int product =  a * b;
+        System.out.println(product);
+    }
+}
+
+- 11. Qs Area of circle 
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input radius : ");
+        int r = sc.nextInt();
+        float area = 3.14f*r*r;
+        System.out.println("Area of cirle is : "+area);
+
+    }
+}
+
+- 12. Type conversion :
+#   Type conversion(implicit / widening ) : 
+        conversion happens when : 
+        a. type compatible (int-int , char -char)
+        b. destination type > Source type 
+        byte -> short -> int -> float -> long -> double
+        
+import java.util.Scanner;
+public class typeconversion {
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        int a = 33; // source
+        long b = a; // destination
+        // System.out.println(b);
+
+        // conversion not possible (data may loss ) : jabarjasti karna padega so do typecaste .
+        // long c = 44;
+        // int d = c;
+        // System.out.println(c);
+
+
+        //destination   // source
+        float value = sc.nextInt();
+        System.out.println(value);
+
+    }
+}
+
+- 13. Type casting :
+    # Type casting (narrowing / explicit) 
+        a. data may loss while casting 
+        b. destination < source .
+        
+import java.util.Scanner;
+public class typecasting {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        // float a = 34.33f;
+        // int b = (int)a;
+        // System.out.println(b);
+
+        // long L = 4446666691L;
+        // int value = (int)L;
+        // System.out.println(value);
+
+        char ch = 'a';
+        char ch1 = 'b';
+        int number = ch1;
+        System.out.println(number);
+    }
+}
+
+- 14. Type promotion in Expression:  : 
+        1. Java automatically promotes each byte , short or char 
+        operand to int when evaluating an expression.
+        2. If one operand is long , float or double the whole experssion
+        is promoted to long , float or double respectively.
+        
+public class type_promotion {
+    public static void main(String[] args) {
+
+        // eg1: 
+        // char a = 'a';
+        // char b = 'b';
+        // System.out.println((int)a);
+        // System.out.println((int)b);
+        // System.out.println(b-a);
+
+        // eg 2
+        // short a = 5;
+        // byte b = 25;
+        // char c = 'c';
+        // byte bt = (byte)(a + b + c); 
+        // System.out.println(bt);
+        // int ans = (a+b+c);
+        // System.out.println(ans);
+        // System.out.println(a + b + c);
+
+
+        // eg 3 
+        // int a = 10;
+        // float b = 30.33f;
+        // long c = 33;
+        // double d = 30;
+        // double ans =  a + b + c + d;
+        // System.out.println(ans);
+
+        //  eg 4;
+        byte b = 5;
+        byte a = (byte) (b*2);
+        System.out.println(a);
+
+    }
+}
+-  -----------------------------------------------Assignment Qs ------------------------
+
+- Qs 1 .
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int avg = (a + b + c) / 3;
+        System.out.println("Average of three number is : "+avg);
+    }
+}
+
+- Qs2 .
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int area = a*a;
+        System.out.println("area of square is : "+area);
+    }
+}
+
+- Q3 .
+//   gst formula : item price + item price * 18/100
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float pencil = sc.nextFloat(); 
+        float pen = sc.nextFloat(); 
+        float eraser =  sc.nextFloat(); 
+
+        float totalcost = pencil + pen + eraser;
+        System.out.println("without gst total cost : "+totalcost);
+        totalcost = (totalcost + totalcost*18/100);
+        System.out.println("with gst total_cost : "+totalcost);
+    }
+}
+
+- Q4. 
+public class Main {
+    public static void main(String[] args) {
+        byte b  = 4;
+        char c  = 'a';
+        short s = 512;
+        int i = 1000;
+        float f  = 3.14f;
+        double d = 99.9954;
+        double result = (f * b) + (i % c) + (d * s);
+    }
+}
+
+- Q5. 
+public class Main {
+    public static void main(String[] args) {
+        int $ = 44;
+        System.out.println($);
+    }
+}
