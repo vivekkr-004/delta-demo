@@ -1,5 +1,5 @@
 # 1. functions : 
-block of code / reusable part of code.
+ <!-- block of code / reusable part of code. -->
 
 # 2. fun syntax :
     fun syntax : 
